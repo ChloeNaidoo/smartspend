@@ -9,6 +9,7 @@ data class Income(
     @PrimaryKey(autoGenerate = true)
     val incomeId: Long = 0,
     val amount: Double,
+    val description: String,
     val source: String,
     val date: Date,
     val notes: String?,

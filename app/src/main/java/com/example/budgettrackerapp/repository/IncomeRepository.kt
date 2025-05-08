@@ -11,3 +11,7 @@ class IncomeRepository @Inject constructor(
 
     fun getIncomes(userId: Long) = incomeDao.getIncomesByUser(userId)
 }
+
+
+
+

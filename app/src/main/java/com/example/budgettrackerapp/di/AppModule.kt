@@ -52,4 +52,7 @@ object AppModule {
 
     @Provides
     fun provideBudgetGoalRepository(budgetGoalDao: BudgetGoalDao): BudgetGoalRepository = BudgetGoalRepository(budgetGoalDao)
+
+    @Provides
+    fun provideIncomeDao(database: AppDatabase): IncomeDao = database.incomeDao()
 }

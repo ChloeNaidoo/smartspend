@@ -44,20 +44,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/addCategoryFragment"
-        android:name="com.example.budgettrackerapp.ui.categories.AddCategoryFragment"
-        android:label="Add Category"
-        tools:layout="@layout/fragment_add_category">
-        <action
-            android:id="@+id/action_addCategoryFragment_back"
-            app:destination="@id/categoriesFragment" />
-    </fragment>
-
-    <fragment
         android:id="@+id/transactionsFragment"
         android:name="com.example.budgettrackerapp.ui.transactions.TransactionsFragment"
         android:label="Transactions"
-        tools:layout="@layout/fragment_transactions" />
+        tools:layout="@layout/transactionsFragment" />
 
     <fragment
         android:id="@+id/categoriesFragment"

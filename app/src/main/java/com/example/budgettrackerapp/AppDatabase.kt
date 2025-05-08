@@ -7,14 +7,16 @@ import androidx.room.RoomDatabase
 import com.example.budgettrackerapp.data.dao.BudgetGoalDao
 import com.example.budgettrackerapp.data.dao.CategoryDao
 import com.example.budgettrackerapp.data.dao.ExpenseDao
+import com.example.budgettrackerapp.data.dao.IncomeDao
 import com.example.budgettrackerapp.data.dao.UserDao
 import com.example.budgettrackerapp.data.entities.BudgetGoal
 import com.example.budgettrackerapp.data.entities.Category
 import com.example.budgettrackerapp.data.entities.Expense
+import com.example.budgettrackerapp.data.entities.Income
 import com.example.budgettrackerapp.data.entities.User
 
 @Database(
-    entities = [User::class, Category::class, Expense::class, BudgetGoal::class],
+    entities = [User::class, Category::class, Expense::class, BudgetGoal::class, Income::class],
     version = 1,
     exportSchema = false
 )
@@ -23,6 +25,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun categoryDao(): CategoryDao
     abstract fun expenseDao(): ExpenseDao
     abstract fun budgetGoalDao(): BudgetGoalDao
+    abstract fun incomeDao(): IncomeDao
 
     companion object {
         @Volatile
